@@ -28,7 +28,7 @@ public class ManualDrive extends CommandBase {
   public void execute() {
 
     double move = -Constants.stick.getY();
-    double turn = Constants.stick.getX();
+    double turn = Constants.stick.getX(); 
     Robot.drivetrain.manualdrive(move, turn);
   }
 
