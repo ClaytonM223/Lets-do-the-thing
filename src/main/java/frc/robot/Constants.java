@@ -31,11 +31,7 @@ public final class Constants {
     public static final int RIGHT_SLAVE_PORT = 4;
 
     //Wheel Diameter
-    public static final int wheelediameter = 6;
-    
-    
-    public static final String stick = null;
-   
+    public static final int wheelediameter = 6;   
     
     
 

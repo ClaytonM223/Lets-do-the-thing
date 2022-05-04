@@ -25,6 +25,8 @@ public class DriveTrain extends SubsystemBase {
   public DriveTrain(){
      leftslave.follow(leftmaster);
      rightslave.follow(rightmaster);
+     rightmaster.setInverted(true);
+     rightslave.setInverted(true);
   }
 
     public void manualdrive(double move, double turn){
