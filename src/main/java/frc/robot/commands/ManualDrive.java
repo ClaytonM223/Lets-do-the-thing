@@ -7,16 +7,12 @@ package frc.robot.commands;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Robot;
 import frc.robot.RobotContainer;
-import frc.robot.subsystems.DriveTrain;
 
 public class ManualDrive extends CommandBase {
   /** Creates a new ManualDrive. */
   public ManualDrive() {
-    Requires(Robot.drivetrain);
+    addRequirements(Robot.drivetrain);
     // Use addRequirements() here to declare subsystem dependencies.
-  }
-
-  private void Requires(DriveTrain drivetrain) {
   }
 
   // Called when the command is initially scheduled.

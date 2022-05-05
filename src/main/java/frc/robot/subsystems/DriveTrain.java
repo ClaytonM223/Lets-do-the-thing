@@ -27,6 +27,7 @@ public class DriveTrain extends SubsystemBase {
      rightslave.follow(rightmaster);
      rightmaster.setInverted(true);
      rightslave.setInverted(true);
+     drive.feed();
   }
 
     public void manualdrive(double move, double turn){
@@ -36,6 +37,7 @@ public class DriveTrain extends SubsystemBase {
   
   @Override
   public void periodic() {
+    drive.feed();
     // This method will be called once per scheduler run
     setDefaultCommand(new ManualDrive());
   }
